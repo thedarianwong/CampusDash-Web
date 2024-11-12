@@ -11,7 +11,7 @@ export default function HowToPlay() {
           <h2 className="text-2xl font-semibold text-[#B70915] mb-4">Basic Rules</h2>
           <div className="space-y-4">
             <p className="text-gray-700">
-              Get ready for an exciting race across campus! Each player has 10 minutes to reach their classroom. Here's how to play:
+              Get ready for an exciting race across campus! Each player has 10 minutes to reach their classroom. Here&apos;s how to play:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>Start your timer when you roll the dice</li>

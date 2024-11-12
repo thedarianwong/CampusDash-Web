@@ -38,19 +38,19 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#B70915] mb-2">Terry Fox</h3>
-              <p className="text-gray-700">The Determined Runner - Named after SFU's most inspiring alumnus, this character never gives up no matter how far behind they might fall.</p>
+              <p className="text-gray-700">The Determined Runner - Named after SFU&apos;s most inspiring alumnus, this character never gives up no matter how far behind they might fall.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#B70915] mb-2">Maggie Benston</h3>
-              <p className="text-gray-700">The Strategic Pioneer - One of SFU's founding faculty members, this character excels at creative problem-solving. </p>
+              <p className="text-gray-700">The Strategic Pioneer - One of SFU&apos;s founding faculty members, this character excels at creative problem-solving. </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#B70915] mb-2">Gordon Shrum</h3>
-              <p className="text-gray-700">The Campus Builder - Named after SFU's first Chancellor, this character knows every corner of the campus. </p>
+              <p className="text-gray-700">The Campus Builder - Named after SFU&apos;s first Chancellor, this character knows every corner of the campus. </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#B70915] mb-2">Robert C. Brown</h3>
-              <p className="text-gray-700">The Research Expert - Representing SFU's first Dean of Graduate Studies, this character is methodical and well-prepared. </p>
+              <p className="text-gray-700">The Research Expert - Representing SFU&apos;s first Dean of Graduate Studies, this character is methodical and well-prepared. </p>
             </div>
           </div>
         </section>

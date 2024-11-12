@@ -69,7 +69,7 @@ export default function Home() {
             />
           </div>
           <p className="mt-2 text-sm text-gray-600 text-center">
-            If the video doesn't load, you can {' '}
+            If the video doesn&apos;t load, you can {' '}
             <a 
               href={videoUrl.replace('/preview', '/view')}
               className="text-blue-500 hover:text-blue-600"
