@@ -1,8 +1,42 @@
 import React from 'react';
 import Image from 'next/image';
 
+interface DownloadButtonProps {
+  url: string;
+  label: string;
+}
+
+
+type CharacterName = 'Terry Fox' | 'Maggie Benston' | 'Gordon Shrum' | 'Robert C. Brown';
+
+const isValidCharacter = (name: string): name is CharacterName => {
+  const validNames: CharacterName[] = [
+    'Terry Fox',
+    'Maggie Benston',
+    'Gordon Shrum',
+    'Robert C. Brown'
+  ];
+  return validNames.includes(name as CharacterName);
+};
+
+const getTokenImagePath = (name: string): string => {
+  const tokenMap: Record<CharacterName, string> = {
+    'Terry Fox': '/images/fox.png',
+    'Maggie Benston': '/images/benston.png',
+    'Gordon Shrum': '/images/shrum.png',
+    'Robert C. Brown': '/images/brown.png'
+  };
+  
+  if (isValidCharacter(name)) {
+    return tokenMap[name];
+  }
+  
+  return '/images/placeholder.png';
+};
+
+
 const actionCardsUrl = "https://docs.google.com/document/d/1HCzEvwX47ckKZvXcWQNdR6WAvTgMGT29ZH5N_F8WLHY/edit?usp=sharing";
-const DownloadButton = ({ url, label }) => (
+const DownloadButton: React.FC <DownloadButtonProps> = ({ url, label }) => (
   <a
     href={url}
     target="_blank"
@@ -16,18 +50,8 @@ const DownloadButton = ({ url, label }) => (
   </a>
 );
 
-const getTokenImagePath = (name) => {
-  const tokenMap = {
-    'Terry Fox': '/images/fox.png',
-    'Maggie Benston': '/images/benston.png',
-    'Gordon Shrum': '/images/shrum.png',
-    'Robert C. Brown': '/images/brown.png'
-  };
-  return tokenMap[name];
-};
 
 export default function PrintNow() {
-  // Replace these URLs with your actual Google Drive or cloud storage links
   const downloadUrls = {
     gameBoard: "https://drive.google.com/uc?export=download&id=1fNmxqS56Trz_d_NGo9TJo81tLV72_p_n", 
     greenCards: "https://drive.google.com/uc?export=download&id=1RNpqbCdHIIIo8BFeQxDnuzy_MaWuO",
